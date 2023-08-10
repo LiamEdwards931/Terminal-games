@@ -1,3 +1,4 @@
+from battleships import battleships
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
@@ -7,9 +8,9 @@ def start():
     print("1.Battleships\n")
     
 def game_select():
-    input("Choose your game here:")
+    choice = input("Choose your game here:")
     while True:
-        if input == "1":
+        if choice == "1":
             battleships()
         else:
             print("Please enter the number of the game you wish to play")
