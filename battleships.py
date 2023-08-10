@@ -1,5 +1,5 @@
 import random
-
+from home import start
 
 def battleships():
     # Variables For The Game To Run - Caps as they are global in the game function.
@@ -80,15 +80,18 @@ def battleships():
     print("\nYour Final Board:")
     print_board(board)
     print("You Win! Congratulations\n")
-    Print("Would you like to play again?")
+    print("Would you like to play again?")
     option = input("yes or no?: ").lower()
-    if option == "yes":
-        restart_game()
-    elif option == "no":
-        print("Thank you for playing battleships")
-        start()
-    else:
-        print("Please enter a valid input!")
+    while True:
+        if option == "yes":
+            restart_game()
+        elif option == "no":
+            print("Thank you for playing battleships")
+            start()
+        else:
+            print("Please enter a valid input!")
+            input()
+
 
 
     
