@@ -54,7 +54,15 @@ def battleships():
     if guess_row < 0 or guess_row >= BOARD_SIZE:
             print("Invalid row. Try again.\n")
             continue
-    
+    #Checks if you have hit a ship
+    if board[row_guess][column_guess] == SHIP:
+            print("HIT! you successfully hit a ship\n")
+            board[guess_row][guess_col] = HIT
+    elif board[guess_row][guess_col] == HIT or board[guess_row][guess_col] == MISS:
+            print("This position has already been fired at! Try again\n")
+    else:
+            print("MISS! You missed a ship\n")
+            board[guess_row][guess_col] = MISS
 
     
 
