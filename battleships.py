@@ -69,7 +69,6 @@ def battleships():
             print("Invalid row. Try again.\n")
             continue
 
-
         if computer_board[row_guess][column_guess] == SHIP:
             print("HIT! You successfully hit a ship\n")
             computer_board[row_guess][column_guess] = HIT
