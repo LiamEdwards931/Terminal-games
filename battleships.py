@@ -86,18 +86,20 @@ def battleships():
 
     print("\nYour Final Board:")
     print_board(player_board)
-    print("You Win! Congratulations\n")
-    print("Would you like to play again?")
-    option = input("yes or no?: ").lower()
-    while True:
-        if option == "yes":
-            restart_game()
-        elif option == "no":
-            print("Thank you for playing battleships")
-            break
-        else:
-            print("Please enter a valid input!")
+    if all(SHIP not in row for row in player_board):
+            print("You Win! Congratulations\n")
+    else:
+        print("Computer Wins! Better luck next time\n")
+        print("Would you like to play again?")
+        option = input("yes or no?: ").lower()
+        while True:
+            if option == "yes":
+                restart_game()
+            elif option == "no":
+                print("Thank you for playing battleships")
+                break
+            else:
+                print("Please enter a valid input!")
 
 
-# Call the battleships function to start the game
-battleships()
+
