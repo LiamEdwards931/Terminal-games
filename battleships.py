@@ -37,6 +37,7 @@ def battleships():
             row_num += 1
         print('  ----------------')
 
+    
     player_board = initialize_board()
     computer_board = initialize_board()
     create_ships(player_board)
@@ -46,10 +47,13 @@ def battleships():
         print("\n Your Board:")
         print_board(player_board)
 
+        print("\n Computer's Board:")
+        print_board(computer_board)
+
         # Players turn
-        column_guess = input("Guess a column (A-H): \n").upper()
-        row_guess = int(input("Guess a Row (1-8): \n")) - 1
-        
+        column_guess = input("Guess a column (A-H): ").upper()
+        row_guess = int(input("Guess a Row (1-8): ")) - 1
+       
         col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
         if column_guess not in col_dict:
             print("That is not a valid column. Try again\n")
@@ -86,20 +90,21 @@ def battleships():
 
     print("\nYour Final Board:")
     print_board(player_board)
-    if all(SHIP not in row for row in player_board):
-            print("You Win! Congratulations\n")
+    if all(SHIP not in row for row in computer_board):
+        print("You Win! Congratulations\n")
     else:
         print("Computer Wins! Better luck next time\n")
-        print("Would you like to play again?")
-        option = input("yes or no?: ").lower()
-        while True:
-            if option == "yes":
-                restart_game()
-            elif option == "no":
-                print("Thank you for playing battleships")
-                break
-            else:
-                print("Please enter a valid input!")
-
+    print("Would you like to play again?")
+    option = input("yes or no?: ").lower()
+    
+    print("Would you like to play again?")
+    option = input("yes or no?: ").lower()
+    if option == "yes":
+        restart_game()
+    elif option == "no":
+        print("Thank you for playing battleships")
+        break
+    else:
+        print("Please enter a valid input!")
 
 
