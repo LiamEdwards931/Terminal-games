@@ -37,7 +37,6 @@ def battleships():
             row_num += 1
         print('  ----------------')
 
-    
     player_board = initialize_board()
     computer_board = initialize_board()
     create_ships(player_board)
@@ -51,18 +50,25 @@ def battleships():
         print_board(computer_board)
 
         # Players turn
-        column_guess = input("Guess a column (A-H): ").upper()
+        column_guess = input("Guess a column (A-H): ").strip().upper()
         row_guess = int(input("Guess a Row (1-8): ")) - 1
-       
+      
         col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
         if column_guess not in col_dict:
             print("That is not a valid column. Try again\n")
+            continue
+        elif column_guess == "":
+            print("Invalid column. Try again.\n")
             continue
         column_guess = col_dict[column_guess]
 
         if row_guess < 0 or row_guess >= BOARD_SIZE:
             print("Invalid row. Try again.\n")
             continue
+        elif row_guess == "":
+            print("Invalid row. Try again.\n")
+            continue
+
 
         if computer_board[row_guess][column_guess] == SHIP:
             print("HIT! You successfully hit a ship\n")
@@ -95,16 +101,13 @@ def battleships():
     else:
         print("Computer Wins! Better luck next time\n")
     print("Would you like to play again?")
-    option = input("yes or no?: ").lower()
-    
-    print("Would you like to play again?")
-    option = input("yes or no?: ").lower()
+    option = input("Type in yes to play again or any key to quit: ").lower()
     if option == "yes":
         restart_game()
-    elif option == "no":
-        print("Thank you for playing battleships")
-        break
     else:
-        print("Please enter a valid input!")
+        return
+
+    
+   
 
 
