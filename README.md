@@ -46,8 +46,11 @@ From here the user can play the battleships game by guessing a grid location thi
 
 Player and Computer guesses are tracked visually on the board, the previous guess was A6:
 - Computers guess on player board
+
 ![Guess-track-player](readmeimg/compguess.png)
+
 - Players guess on computer board
+
 ![Guess-track-computer](readmeimg/playerguess.png)
 
 # Features
