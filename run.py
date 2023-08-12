@@ -11,13 +11,13 @@ def game_select():
         print("Please select a game you wish to play\n")
         print("0. Exit Terminal games")
         print("1. Battleships")
-   
+
         choice = input("Choose your game here:")
-   
+
         if choice.strip() == "":
             print("Please enter a valid option\n")
             continue
-      
+   
         try:
             choice = int(choice)
             if choice == 1:
@@ -32,10 +32,3 @@ def game_select():
 
 
 game_select()
-  
-
-
-
-
-
-
