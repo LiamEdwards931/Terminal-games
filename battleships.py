@@ -1,5 +1,10 @@
 import random
 
+""" 
+For testing purposes in this project I have left the ships for the computer as marked on the board, making the game very easy..
+This is intentional
+"""
+
 def battleships():
     EMPTY = ' '
     SHIP = 'S'
@@ -105,9 +110,9 @@ def battleships():
 
     while True:
         print("Would you like to play again?")
-        option = input("Type in 'yes' to play again or 'no' to quit: ").lower()
+        option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
         if option == "yes":
-            print("okay")
+            restart_game()
         elif option == "no":
             print("Thank you for playing Battleships!")
             break
