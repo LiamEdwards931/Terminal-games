@@ -19,8 +19,10 @@
     - [Features](#features)
     - [Future_features](#future-features)
 - [Testing](#testing)
+    - [validation](#technology)
     - [Bugs](#bugs)
     - [Commits](#commits)
+- [Technology_used](#technology-used)
 - [Deployment](#deployment)
     - [Heroku](#heroku)
     - [Cloning](#cloning-a-repository)
@@ -86,19 +88,45 @@ Terminal games has input validation - you can only select the options that are a
     - Took the code line by line to check for any whitespace, indentation issues.
     - Played the game where the computer wins to ensure that it is registering correctly. 
     - Tested the visuals and breaks in the lines to give readability.
+    - Ran the project through PEP8 as stated below.
+    - Repeated this process when game was deployed to Heroku.
+
 
 [home](#terminal-games)
 
-### BUGS 
-- Bug where if user types "no" to exit the game it repeatedly asks without breaking the loop. - fixed by calling the import at the top and the function with the option with the correct syntax. "battleships.battleships()"
+## Validation
 
-- Bug where if user entered empty field it would cause an error - fixed this by wrapping the inputs and main game loop in a while loop looking for a correct validation
+- Went through [pep8](https://www.pythonchecker.com/) with no significant issues
+
+![Testscore](readmeimg/python-validation.png)
+
+### BUGS 
+- Bug where if user types "no" to exit the game it repeatedly asks without breaking the loop. 
+    - fixed by calling the import at the top and the function with the option with the correct syntax. "battleships.battleships()"
+
+- Bug where if user entered empty field it would cause an error 
+    - fixed this by wrapping the inputs and main game loop in a while loop looking for a correct validation
+
+- Bug where when player went back to the terminal games page after beating battleships it would not let you re-enter the game. 
+    - Same fix as the first example
+
+- Game was crashing when restart game was called.
+    - fixed by correctly indenting the call to restart the game
+
+- Battleships was not running when user selected 1.
+    - fixed by correctly adding the validation checks on the run file.
 
 [home](#terminal-games)
 
 ### Commits 
 - Several large commits whilst fixing issues, as I was deleting or rearranging a lot of code to try to get the code running the way that I needed it too.
 I didn't commit the changes as I was doing it as the code wasn't behaving in the way that I was expecting it too and wished to commit only when it was working.
+
+[home](#terminal-games)
+
+## Technology used
+
+- This app was created using python
 
 [home](#terminal-games)
 
@@ -137,6 +165,21 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 5. Enter git clone followed by the copied URL.
 6. Enter where you would like your repository to be saved too for your local file.
 7. Press Enter to finalise the clone.
+
+[home](#terminal-games)
+
+## Credits
+
+- The game board code was taken from an idea from: [here](https://copyassignment.com/battleship-game-code-in-python/)
+- Had help with the computer turns and input validation [stack-overflow](https://stackoverflow.com/)
+- Used the love-sandwiches video for a refresher on how to deply the app to Heroku
+
+## Acknowledgments
+
+- This project was created for the level 3 diploma Full Stack Developer with the [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=CjwKCAjw67ajBhAVEiwA2g_jEKYbx7CDH4ExZGh3udf-5qh-Ee91R2MXr7F5M4UdbdDhV-c-QZ-_zxoCyW4QAvD_BwE)
+- [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for the constructive feedback with my milestone project.
+
+Liam Edwards 2023.
 
 [home](#terminal-games)
 

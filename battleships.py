@@ -1,11 +1,14 @@
 import random
 
 """ 
-For testing purposes in this project I have left the ships for the computer as marked on the board, making the game very easy..
+For testing, the ships are marked
 This is intentional
 """
 
 def battleships():
+    """
+    function to run the entire code.
+    """
     EMPTY = ' '
     SHIP = 'S'
     HIT = 'X'
@@ -16,6 +19,9 @@ def battleships():
     print("The aim is to sink your opponent's ships by guessing a grid and column number\n")
    
     def initialize_board():
+        """
+        Initializes the game boards
+        """
         return [[EMPTY] * BOARD_SIZE for _ in range(BOARD_SIZE)]
 
     def create_ships(board):
@@ -97,9 +103,15 @@ def battleships():
         else:
             print("Computer MISSED!")
             player_board[computer_guess_row][computer_guess_col] = MISS
+
+    
     def restart_game():
+        """
+        Restarts the game
+        """
         battleships()
 
+   
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
