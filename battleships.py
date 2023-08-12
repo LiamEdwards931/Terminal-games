@@ -54,13 +54,13 @@ def battleships():
             try:
                 column_guess = str(input("Guess a column (A-H): ")).strip().upper()
                 row_guess_input = input("Guess a Row (1-8): ").strip()
-            
+        
                 if not column_guess or not row_guess_input:
                     print("Please enter both column and row.\n")
                     continue
-            
+        
                 row_guess = int(row_guess_input) - 1
-                
+               
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -82,6 +82,17 @@ def battleships():
             except ValueError:
                 print("Invalid input. Please enter valid inputs.\n")
 
+        computer_guess_row = random.randint(0, BOARD_SIZE - 1)
+        computer_guess_col = random.randint(0, BOARD_SIZE - 1)
+
+        print("\nComputer's Turn:")
+        if player_board[computer_guess_row][computer_guess_col] == SHIP:
+            print("Computer HIT your ship!")
+            player_board[computer_guess_row][computer_guess_col] = HIT
+        else:
+            print("Computer MISSED!")
+            player_board[computer_guess_row][computer_guess_col] = MISS
+   
     def restart_game():
         battleships()
 
@@ -91,11 +102,17 @@ def battleships():
         print("You Win! Congratulations\n")
     else:
         print("Computer Wins! Better luck next time\n")
-    print("Would you like to play again?")
-    option = input("Type in yes to play again or any key to quit: ").lower()
-    if option == "yes":
-        restart_game()
-    else:
-        return
+
+    while True:
+        print("Would you like to play again?")
+        option = input("Type in 'yes' to play again or 'no' to quit: ").lower()
+        if option == "yes":
+            print("okay")
+        elif option == "no":
+            print("Thank you for playing Battleships!")
+            break
+        else:
+            print("Please choose a valid option.")
 
 
+battleships()
