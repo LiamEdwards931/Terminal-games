@@ -109,23 +109,23 @@ I didn't commit the changes as I was doing it as the code wasn't behaving in the
 This project is deployed with Heroku - the steps to deploy are as follows:
 - Sign in and click "Create new app"
 
-[Step1](readmeimg/herokustep1.png)
+![Step1](readmeimg/herokustep1.png)
 
 - Name your project and select you region:
 
-[Step2](readmeimg/nametheapp.png)
+![Step2](readmeimg/nametheapp.png)
 
 - Add your buildpack with python going in first and then Node.js second:
 
-[step3](readmeimg/importbuildpack.png)
+![step3](readmeimg/importbuildpack.png)
 
 - Go to deploy and connect your repository for your project using the GitHub Option
 
-[step4](readmeimg/connecttogithub.png)
+![step4](readmeimg/connecttogithub.png)
 
 - Once you have connected deploy from main branch - choose "automatic updates if you want to update as you work on your project" if not press deploy at the bottom
 
-[step5](readmeimg/laststep.png)
+![step5](readmeimg/laststep.png)
 
 
 ### Cloning a repository
