@@ -1,3 +1,16 @@
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+# Terminal Games
+- Terminal games is a python project that has a dashboard where you can select to play a variety of games, the current game available is Battleships but the code is left open to add new games with ease.
+
+# Battleships
+- Battleships is a game where you guess co-ordinates on a map, the objective is to sink the enemy ships before your own are sunk.
+    - In the version I have created, you play against the computer. In it's current state the ships are visible on the enemy board this is mainly for testing purposes as it makes the game run quicker for the project testers.
+
+# Live Deployment
+- Terminal games is deployed through Heroku the live deployment is here: [Terminal-Games](https://terminal-games-a4b70cb979e5.herokuapp.com/)
+- The repository for this project is on GitHub and is located here: [Terminal-Games-Repository](https://github.com/LiamEdwards931/Terminal-games.git)
+
 # User experience
 
 - With the project terminal games, I am trying to envoke a positive user experience by giving them a simple landing page in which they can easily access the games they wish to play, by simply pressing the number for the game they want to play they can enjoy the game for example in battleships once this game is over, they can easily go back to the landing page to select another game if they wish too or from here they can simply exit the program.
