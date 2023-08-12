@@ -15,6 +15,7 @@
 - [Terminal-Games](#terminal-games)
     - [BattleShips](#battleships)
 - [Live-Deployment](#live-deployment)
+- [Inspiration](#inspiration)
 - [User-Experience](#user-experience)
     - [Features](#features)
         - [Start_Screen](#start-screen)
@@ -35,9 +36,13 @@
 - [credits](#credits)
 - [achknowledgements](#acknowledgments)
 
+## Inspiration
+
+- I wanted to create an app that is not linear and leaves a lot of room to grow, Battleships is just the start of the classic games that can be played. 
+and it will be interesting to develop some more ideas in the future.
 
 
-# User experience
+## User experience
 
 - With the project terminal games, I am trying to envoke a positive user experience by giving them a simple landing page in which they can easily access the games they wish to play, by simply pressing the number for the game they want to play they can enjoy the game for example in battleships once this game is over, they can easily go back to the landing page to select another game if they wish too or from here they can simply exit the program.
 
