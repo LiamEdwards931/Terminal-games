@@ -17,6 +17,12 @@
 - [Live-Deployment](#live-deployment)
 - [User-Experience](#user-experience)
     - [Features](#features)
+        - [Start_Screen](#start-screen)
+        - [Option_1](#option-1)
+        - [Guess](#guess-input)
+        - [Guess-Tracking](#guess-tracking)
+        - [Winning](#win-screen)
+        - [After_The_Win](#options-after-the-win)
     - [Future_features](#future-features)
 - [Testing](#testing)
     - [validation](#technology)
@@ -47,21 +53,31 @@
 
 ## Features
 
+### Start screen
+
 This is the starting screen that players will expect when starting terminal games:
 
 ![startscreen](readmeimg/startscreen.png)
+
+### Option 0
 
 If the user selects option 0 they see this:
 
 ![Option-0](readmeimg/option0.png)
 
+### Option 1
+
 If the user selects option 1. Battleships they come to this screen:
 
 ![Option-1](readmeimg/option1.png)
 
+### Guess input
+
 From here the user can play the battleships game by guessing a grid location this, the computer then takes it's turn:
 
 ![Guess](readmeimg/guess.png)
+
+### Guess Tracking
 
 Player and Computer guesses are tracked visually on the board, the previous guess was A6 represented by O and hits by an X:
 - Computers guess on player board
@@ -72,12 +88,16 @@ Player and Computer guesses are tracked visually on the board, the previous gues
 
 ![Guess-track-computer](readmeimg/playerguess.png)
 
+### Win screen
+
 When you beat the Computer at the game you get this message:
 
 ![win-screen](readmeimg/winscreen.png)
 
-If player types 'yes' it resets the board with ships in new positions to play again
-If the player types 'no' it takes you back to the Terminal Games home page where you can select a game, Battleships again if you like.
+### Options after the win
+
+- If player types 'yes' it resets the board with ships in new positions to play again
+- If the player types 'no' it takes you back to the Terminal Games home page where you can select a game, Battleships again if you like.
 
 Terminal games has input validation - you can only select the options that are available and empty inputs are not allowed.
 
