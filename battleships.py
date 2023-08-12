@@ -49,46 +49,38 @@ def battleships():
         print("\n Computer's Board:")
         print_board(computer_board)
 
-        # Players turn
-        column_guess = input("Guess a column (A-H): ").strip().upper()
-        row_guess = int(input("Guess a Row (1-8): ")) - 1
-      
-        col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
-        if column_guess not in col_dict:
-            print("That is not a valid column. Try again\n")
-            continue
-        elif column_guess == "":
-            print("Invalid column. Try again.\n")
-            continue
-        column_guess = col_dict[column_guess]
+    # Players turn
+        while True:
+            try:
+                column_guess = str(input("Guess a column (A-H): ")).strip().upper()
+                row_guess_input = input("Guess a Row (1-8): ").strip()
+            
+                if not column_guess or not row_guess_input:
+                    print("Please enter both column and row.\n")
+                    continue
+            
+                row_guess = int(row_guess_input) - 1
+                
+                col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
+                if column_guess not in col_dict:
+                    print("That is not a valid column. Try again\n")
+                    continue
 
-        if row_guess < 0 or row_guess >= BOARD_SIZE:
-            print("Invalid row. Try again.\n")
-            continue
-        elif row_guess == "":
-            print("Invalid row. Try again.\n")
-            continue
+                if row_guess < 0 or row_guess >= BOARD_SIZE:
+                    print("Invalid row. Try again.\n")
+                    continue
 
-        if computer_board[row_guess][column_guess] == SHIP:
-            print("HIT! You successfully hit a ship\n")
-            computer_board[row_guess][column_guess] = HIT
-        elif computer_board[row_guess][column_guess] == HIT or computer_board[row_guess][column_guess] == MISS:
-            print("This position has already been fired at! Try again\n")
-        else:
-            print("MISS! You missed a ship\n")
-            computer_board[row_guess][column_guess] = MISS
-
-        # Computer's turn
-        computer_guess_row = random.randint(0, BOARD_SIZE - 1)
-        computer_guess_col = random.randint(0, BOARD_SIZE - 1)
-
-        print("\nComputer's Turn:")
-        if player_board[computer_guess_row][computer_guess_col] == SHIP:
-            print("Computer HIT your ship!")
-            player_board[computer_guess_row][computer_guess_col] = HIT
-        else:
-            print("Computer MISSED!")
-            player_board[computer_guess_row][computer_guess_col] = MISS
+                if computer_board[row_guess][col_dict[column_guess]] == SHIP:
+                    print("HIT! You successfully hit a ship\n")
+                    computer_board[row_guess][col_dict[column_guess]] = HIT
+                elif computer_board[row_guess][col_dict[column_guess]] == HIT or computer_board[row_guess][col_dict[column_guess]] == MISS:
+                    print("This position has already been fired at! Try again\n")
+                else:
+                    print("MISS! You missed a ship\n")
+                    computer_board[row_guess][col_dict[column_guess]] = MISS
+                break  # Exit the loop if all checks pass
+            except ValueError:
+                print("Invalid input. Please enter valid inputs.\n")
 
     def restart_game():
         battleships()
@@ -105,8 +97,5 @@ def battleships():
         restart_game()
     else:
         return
-
-    
-   
 
 
