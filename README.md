@@ -3,13 +3,22 @@
 # Terminal Games
 - Terminal games is a python project that has a dashboard where you can select to play a variety of games, the current game available is Battleships but the code is left open to add new games with ease.
 
-# Battleships
+## Battleships
 - Battleships is a game where you guess co-ordinates on a map, the objective is to sink the enemy ships before your own are sunk.
     - In the version I have created, you play against the computer. In it's current state the ships are visible on the enemy board this is mainly for testing purposes as it makes the game run quicker for the project testers.
 
-# Live Deployment
+## Live Deployment
 - Terminal games is deployed through Heroku the live deployment is here: [Terminal-Games](https://terminal-games-a4b70cb979e5.herokuapp.com/)
 - The repository for this project is on GitHub and is located here: [Terminal-Games-Repository](https://github.com/LiamEdwards931/Terminal-games.git)
+
+# Contents
+- [Terminal-Games](#terminal-games)
+    - [BattleShips](#battleships)
+- [Live-Deployment](#live-deployment)
+- [User-Experience](#user-experience)
+    - [User-Journey](#user-journey)
+
+
 
 # User experience
 
@@ -17,9 +26,19 @@
 
 - With the battleships game I wanted to create 2 boards so you could keep track of your own guesses but also to see where the computer was hitting too, to make the game feel a little bit more authentic.
 
+### User Journey
+
+This is the starting screen that players will expect when starting terminal games:
+
+[startscreen](readmeimg/startscreen.png)
+
+If the user selects option 0 they see this:
+
+[Option-0](readmeimg/option0.png)
+
 # Features
 
-# Future Features
+## Future Features
 - With the way that I have set the landing page up for terminal games, the future features will be to implement more games that can be easily accessed through the options on the run file.
 
 # Testing
