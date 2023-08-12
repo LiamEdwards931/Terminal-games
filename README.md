@@ -40,6 +40,16 @@ If the user selects option 1. Battleships they come to this screen:
 
 ![Option-1](readmeimg/option1.png)
 
+From here the user can play the battleships game by guessing a grid location this, the computer then takes it's turn:
+
+![Guess](readmeimg/guess.png)
+
+Player and Computer guesses are tracked visually on the board, the previous guess was A6:
+- Computers guess on player board
+![Guess-track-player](readmeimg/compguess.png)
+- Players guess on computer board
+![Guess-track-computer](readmeimg/playerguess.png)
+
 # Features
 
 ## Future Features
