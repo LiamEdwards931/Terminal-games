@@ -26,6 +26,8 @@
 - [Deployment](#deployment)
     - [Heroku](#heroku)
     - [Cloning](#cloning-a-repository)
+- [credits](#credits)
+- [achknowledgements](#acknowledgments)
 
 
 
@@ -34,6 +36,14 @@
 - With the project terminal games, I am trying to envoke a positive user experience by giving them a simple landing page in which they can easily access the games they wish to play, by simply pressing the number for the game they want to play they can enjoy the game for example in battleships once this game is over, they can easily go back to the landing page to select another game if they wish too or from here they can simply exit the program.
 
 - With the battleships game I wanted to create 2 boards so you could keep track of your own guesses but also to see where the computer was hitting too, to make the game feel a little bit more authentic.
+
+    - As a user I would expect intuitive navigation of the app
+    - As a user I would expect easy readability
+    - As a user I would expect the game to run and be able to play without assistance
+    - As a user I would expect the computer to offer a satisfying challenge
+    - As a user I would expect to be able to play the game again if I wanted
+    - As a user I would expect to be able to return to the main landing page
+    - As a user I would expect to see the game board in a clear way.
 
 ## Features
 
