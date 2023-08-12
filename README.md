@@ -16,7 +16,7 @@
     - [BattleShips](#battleships)
 - [Live-Deployment](#live-deployment)
 - [User-Experience](#user-experience)
-    - [User-Journey](#user-journey)
+    - [Features](#features)
 
 
 
@@ -26,7 +26,7 @@
 
 - With the battleships game I wanted to create 2 boards so you could keep track of your own guesses but also to see where the computer was hitting too, to make the game feel a little bit more authentic.
 
-### User Journey
+## Features
 
 This is the starting screen that players will expect when starting terminal games:
 
@@ -44,7 +44,7 @@ From here the user can play the battleships game by guessing a grid location thi
 
 ![Guess](readmeimg/guess.png)
 
-Player and Computer guesses are tracked visually on the board, the previous guess was A6:
+Player and Computer guesses are tracked visually on the board, the previous guess was A6 represented by O and hits by an X:
 - Computers guess on player board
 
 ![Guess-track-player](readmeimg/compguess.png)
@@ -53,10 +53,21 @@ Player and Computer guesses are tracked visually on the board, the previous gues
 
 ![Guess-track-computer](readmeimg/playerguess.png)
 
-# Features
+When you beat the Computer at the game you get this message:
+
+![win-screen](readmeimg/winscreen.png)
+
+If player types 'yes' it resets the board with ships in new positions to play again
+If the player types 'no' it takes you back to the Terminal Games home page where you can select a game, Battleships again if you like.
+
+Terminal games has input validation - you can only select the options that are available and empty inputs are not allowed.
+
+[home](#terminal-games)
 
 ## Future Features
 - With the way that I have set the landing page up for terminal games, the future features will be to implement more games that can be easily accessed through the options on the run file.
+
+[home](#terminal-games)
 
 # Testing
 
@@ -69,16 +80,19 @@ Player and Computer guesses are tracked visually on the board, the previous gues
     - Played the game where the computer wins to ensure that it is registering correctly. 
     - Tested the visuals and breaks in the lines to give readability.
 
+[home](#terminal-games)
 
 ## BUGS 
 - Bug where if user types "no" to exit the game it repeatedly asks without breaking the loop. - fixed by calling the import at the top and the function with the option with the correct syntax. "battleships.battleships()"
 
 - Bug where if user entered empty field it would cause an error - fixed this by wrapping the inputs and main game loop in a while loop looking for a correct validation
 
-- 
+[home](#terminal-games)
 
 
 # Commits 
 - Several large commits whilst fixing issues, as I was deleting or rearranging a lot of code to try to get the code running the way that I needed it too.
 I didn't commit the changes as I was doing it as the code wasn't behaving in the way that I was expecting it too and wished to commit only when it was working.
+
+[home](#terminal-games)
 
