@@ -11,12 +11,19 @@
 - Terminal games is deployed through Heroku the live deployment is here: [Terminal-Games](https://terminal-games-a4b70cb979e5.herokuapp.com/)
 - The repository for this project is on GitHub and is located here: [Terminal-Games-Repository](https://github.com/LiamEdwards931/Terminal-games.git)
 
-# Contents
+## Contents
 - [Terminal-Games](#terminal-games)
     - [BattleShips](#battleships)
 - [Live-Deployment](#live-deployment)
 - [User-Experience](#user-experience)
     - [Features](#features)
+    - [Future_features](#future-features)
+- [Testing](#testing)
+    - [Bugs](#bugs)
+    - [Commits](#commits)
+- [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Cloning](#cloning-a-repository)
 
 
 
@@ -64,12 +71,12 @@ Terminal games has input validation - you can only select the options that are a
 
 [home](#terminal-games)
 
-## Future Features
+### Future Features
 - With the way that I have set the landing page up for terminal games, the future features will be to implement more games that can be easily accessed through the options on the run file.
 
 [home](#terminal-games)
 
-# Testing
+## Testing
 
 - I have tested the terminal games project by: 
     - Running the game and checking each input works as it should.
@@ -82,17 +89,55 @@ Terminal games has input validation - you can only select the options that are a
 
 [home](#terminal-games)
 
-## BUGS 
+### BUGS 
 - Bug where if user types "no" to exit the game it repeatedly asks without breaking the loop. - fixed by calling the import at the top and the function with the option with the correct syntax. "battleships.battleships()"
 
 - Bug where if user entered empty field it would cause an error - fixed this by wrapping the inputs and main game loop in a while loop looking for a correct validation
 
 [home](#terminal-games)
 
-
-# Commits 
+### Commits 
 - Several large commits whilst fixing issues, as I was deleting or rearranging a lot of code to try to get the code running the way that I needed it too.
 I didn't commit the changes as I was doing it as the code wasn't behaving in the way that I was expecting it too and wished to commit only when it was working.
 
 [home](#terminal-games)
+
+## Deployment
+
+### Heroku
+
+This project is deployed with Heroku - the steps to deploy are as follows:
+- Sign in and click "Create new app"
+
+[Step1](readmeimg/herokustep1.png)
+
+- Name your project and select you region:
+
+[Step2](readmeimg/nametheapp.png)
+
+- Add your buildpack with python going in first and then Node.js second:
+
+[step3](readmeimg/importbuildpack.png)
+
+- Go to deploy and connect your repository for your project using the GitHub Option
+
+[step4](readmeimg/connecttogithub.png)
+
+- Once you have connected deploy from main branch - choose "automatic updates if you want to update as you work on your project" if not press deploy at the bottom
+
+[step5](readmeimg/laststep.png)
+
+
+### Cloning a repository
+
+1. On your GitHub repository navigate to your repository page.
+2. Click on the green button with "CODE" written in it.
+3. Go to the HTTPS and copy the URL by pressing the overlapping squares.
+4. Open Git Bash.
+5. Enter git clone followed by the copied URL.
+6. Enter where you would like your repository to be saved too for your local file.
+7. Press Enter to finalise the clone.
+
+[home](#terminal-games)
+
 
