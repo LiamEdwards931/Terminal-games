@@ -34,7 +34,7 @@
     - [Heroku](#heroku)
     - [Cloning](#cloning-a-repository)
 - [credits](#credits)
-- [achknowledgements](#acknowledgments)
+- [Acknowledgements](#acknowledgments)
 
 ## Inspiration
 
