@@ -59,13 +59,13 @@ def battleships():
             try:
                 column_guess = str(input("Guess a column (A-H): ")).strip().upper()
                 row_guess_input = input("Guess a Row (1-8): ").strip()
-        
+     
                 if not column_guess or not row_guess_input:
                     print("Please enter both column and row.\n")
                     continue
-        
+     
                 row_guess = int(row_guess_input) - 1
-               
+             
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -115,9 +115,9 @@ def battleships():
             restart_game()
         elif option == "no":
             print("Thank you for playing Battleships!")
-            break
+            return
         else:
             print("Please choose a valid option.")
 
 
-battleships()
+

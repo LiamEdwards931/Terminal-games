@@ -1,7 +1,7 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-
+import battleships
 def game_select():
     """
     Function to choose the game you want to play
@@ -21,7 +21,7 @@ def game_select():
         try:
             choice = int(choice)
             if choice == 1:
-                from battleships import battleships
+                battleships.battleships()
             elif choice == 0:
                 print("Thank you for using Terminal Games\n")
                 break
@@ -30,10 +30,11 @@ def game_select():
         except ValueError:
             print("Please enter a valid option\n")
 
+
 game_select()
 
 
-         
+     
 
 
 
