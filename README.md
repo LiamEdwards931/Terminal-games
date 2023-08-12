@@ -36,6 +36,10 @@ If the user selects option 0 they see this:
 
 ![Option-0](readmeimg/option0.png)
 
+If the user selects option 1. Battleships they come to this screen:
+
+![Option-1](readmeimg/option1.png)
+
 # Features
 
 ## Future Features
