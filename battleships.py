@@ -119,5 +119,3 @@ def battleships():
         else:
             print("Please choose a valid option.")
 
-
-
