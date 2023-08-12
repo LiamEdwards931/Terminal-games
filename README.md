@@ -30,11 +30,11 @@
 
 This is the starting screen that players will expect when starting terminal games:
 
-[startscreen](readmeimg/startscreen.png)
+![startscreen](readmeimg/startscreen.png)
 
 If the user selects option 0 they see this:
 
-[Option-0](readmeimg/option0.png)
+![Option-0](readmeimg/option0.png)
 
 # Features
 
