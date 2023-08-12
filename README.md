@@ -26,7 +26,7 @@
         - [After_The_Win](#options-after-the-win)
     - [Future_features](#future-features)
 - [Testing](#testing)
-    - [validation](#technology)
+    - [Validation](#technology)
     - [Bugs](#bugs)
     - [Commits](#commits)
 - [Technology_used](#technology-used)
