@@ -206,6 +206,8 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 
 ![step5](readmeimg/laststep.png)
 
+- Terminal games is deployed through Heroku the live deployment is here: [Terminal-Games](https://terminal-games-a4b70cb979e5.herokuapp.com/)
+
 
 ### Cloning a repository
 
