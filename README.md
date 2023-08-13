@@ -76,6 +76,10 @@ If the user selects option 1. Battleships they come to this screen:
 
 ![Option-1](readmeimg/option1.png)
 
+### Option 2 
+
+If the user selections option 2. Battleships Main Game they come to the main battleships game where the ships are hidden
+
 ### Guess input
 
 From here the user can play the battleships game by guessing a grid location this, the computer then takes it's turn:
