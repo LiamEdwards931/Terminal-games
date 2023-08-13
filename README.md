@@ -20,6 +20,7 @@
     - [Features](#features)
         - [Start_Screen](#start-screen)
         - [Option_1](#option-1)
+        - [Option_2](#option-2)
         - [Guess](#guess-input)
         - [Guess-Tracking](#guess-tracking)
         - [Winning](#win-screen)
