@@ -111,6 +111,8 @@ Terminal games has input validation - you can only select the options that are a
 ### Future Features
 - With the way that I have set the landing page up for terminal games, the future features will be to implement more games that can be easily accessed through the options on the run file.
 
+- Specifically for the battleships game, I will implement a more structured computer that checks it's previous guesses and tries to calculate new places to hit 
+
 [home](#terminal-games)
 
 ## Testing
@@ -125,6 +127,10 @@ Terminal games has input validation - you can only select the options that are a
     - Tested the visuals and breaks in the lines to give readability.
     - Ran the project through PEP8 as stated below.
     - Repeated this process when game was deployed to Heroku.
+    - Tested every square on the board to ensure that the output was responding to the gird location.
+    - Repeated this test by winning and then choosing restart.
+    - Repeated this by winning and then exiting and then re-entering the game
+    - Tested the game by after wins exiting and choosing the other options to check functionality
 
 
 [home](#terminal-games)

@@ -106,13 +106,6 @@ def battleships():
             player_board[computer_guess_row][computer_guess_col] = MISS
 
    
-    def restart_game():
-        """
-        Restarts the game
-        """
-        battleships()
-
- 
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
@@ -124,7 +117,8 @@ def battleships():
         print("Would you like to play again?")
         option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
         if option == "yes":
-            restart_game()
+            battleships()
+            break
         elif option == "no":
             print("Thank you for playing Battleships!")
             return
