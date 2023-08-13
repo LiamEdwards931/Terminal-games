@@ -78,7 +78,7 @@ If the user selects option 1. Battleships they come to this screen:
 
 ### Option 2 
 
-If the user selections option 2. Battleships Main Game they come to the main battleships game where the ships are hidden
+If the user selections option 2. Battleships Main Game they come to the exact same battleships game as option 1 except the ships are hidden as intented to play
 
 ### Guess input
 
