@@ -34,7 +34,9 @@ def battleships():
 
     def print_board(board, show_ships=True):
         """
-        prints the game board
+        prints the game board 
+        this code has a new argument so you can see the ships on your own board 
+        but not on computer board
         """
         print('   A B C D E F G H')
         print('  ----------------')
