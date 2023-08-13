@@ -18,7 +18,7 @@ def battleships():
     NUM_SHIPS = 4
     print("Welcome to Battleships\n")
     print("The aim is to sink your opponent's 4 ships by guessing a grid and column number\n")
- 
+
     def initialize_board():
         """
         Initializes the game boards
@@ -72,7 +72,7 @@ def battleships():
                     continue
 
                 row_guess = int(row_guess_input) - 1
-       
+     
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -106,13 +106,6 @@ def battleships():
             player_board[computer_guess_row][computer_guess_col] = MISS
 
     
-    def restart_game():
-        """
-        Restarts the game
-        """
-        battleships()
-
-   
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
@@ -124,7 +117,8 @@ def battleships():
         print("Would you like to play again?")
         option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
         if option == "yes":
-            restart_game()
+            battleships()
+            break
         elif option == "no":
             print("Thank you for playing Battleships!")
             return
