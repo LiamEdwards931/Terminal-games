@@ -151,6 +151,9 @@ Terminal games has input validation - you can only select the options that are a
 - Battleships was not running when user selected 1.
     - fixed by correctly adding the validation checks on the run file.
 
+- Player was prompted to enter "no" twice when beating the game after the first game
+    - fixed this by removing the restart game function and directly calling the game function again in the restart option, so game loop correctly breaks.
+
 [home](#terminal-games)
 
 ### Commits 
