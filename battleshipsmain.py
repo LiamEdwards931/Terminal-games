@@ -1,10 +1,5 @@
 import random
 
-""" 
-For testing, the ships are marked
-This is intentional
-"""
-
 
 def battleships():
     """
@@ -17,8 +12,8 @@ def battleships():
     BOARD_SIZE = 8
     NUM_SHIPS = 4
     print("Welcome to Battleships\n")
-    print("The aim is to sink your opponent's 4 ships by guessing a grid and column number\n")
- 
+    print("The aim is to sink your opponent's 4 ships by guessing a grid location\n")
+
     def initialize_board():
         """
         Initializes the game boards
@@ -37,7 +32,7 @@ def battleships():
                 ship_col = random.randint(0, BOARD_SIZE - 1)
             board[ship_row][ship_col] = SHIP
 
-    def print_board(board):
+    def print_board(board, show_ships=True):
         """
         prints the game board
         """
@@ -45,7 +40,10 @@ def battleships():
         print('  ----------------')
         row_num = 1
         for row in board:
-            print("%d |%s|" % (row_num, "|".join(row)))
+            if show_ships:
+                print("%d |%s|" % (row_num, "|".join(row)))
+            else:
+                print("%d |%s|" % (row_num, "|".join([cell if cell != SHIP else EMPTY for cell in row])))
             row_num += 1
         print('  ----------------')
 
@@ -59,7 +57,7 @@ def battleships():
         print_board(player_board)
 
         print("\n Computer's Board:")
-        print_board(computer_board)
+        print_board(computer_board, show_ships=False)
 
     # Players turn
         while True:
@@ -90,7 +88,7 @@ def battleships():
                 else:
                     print("MISS! You missed a ship\n")
                     computer_board[row_guess][col_dict[column_guess]] = MISS
-                break  # Exit the loop if all checks pass
+                break  
             except ValueError:
                 print("Invalid input. Please enter valid inputs.\n")
 
@@ -105,14 +103,14 @@ def battleships():
             print("Computer MISSED!")
             player_board[computer_guess_row][computer_guess_col] = MISS
 
-    
+   
     def restart_game():
         """
         Restarts the game
         """
         battleships()
 
-   
+ 
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
@@ -130,3 +128,4 @@ def battleships():
             return
         else:
             print("Please choose a valid option.")
+
