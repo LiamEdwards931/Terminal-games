@@ -5,7 +5,9 @@
 
 ## Battleships
 - Battleships is a game where you guess co-ordinates on a map, the objective is to sink the enemy ships before your own are sunk.
-    - In the version I have created, you play against the computer. In it's current state the ships are visible on the enemy board this is mainly for testing purposes as it makes the game run quicker for the project testers.
+    - In the version I have created, you play against the computer. 
+    - Option 1 in the initial screen has the ships visible for testing purposes, I have left it in to showcase the different options in the main screen.
+    - Option 2 has the original playable version of battleships with the computer ships hidden.
 
 ## Live Deployment
 - Terminal games is deployed through Heroku the live deployment is here: [Terminal-Games](https://terminal-games-a4b70cb979e5.herokuapp.com/)
