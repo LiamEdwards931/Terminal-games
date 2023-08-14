@@ -102,7 +102,8 @@ Player and Computer guesses are tracked visually on the board, the previous gues
 
 ### Win screen
 
-When you beat the Computer at the game you get this message:
+When you beat the computer, you get a congratulations and it also tells you how long it took you to win
+it then asks if you would like to play again:
 
 ![win-screen](readmeimg/winscreen.png)
 
