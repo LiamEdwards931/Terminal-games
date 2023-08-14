@@ -13,7 +13,7 @@ def game_select():
         print("1. Battleships'Test version'")
         print("2. Battleships Main Game")
 
-        choice = input("Choose your game here:")
+        choice = input("Choose the number of the game you wish to play:")
 
         if choice.strip() == "":
             print("Please enter a valid option\n")
