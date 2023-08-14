@@ -113,13 +113,12 @@ def battleships():
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
-        print("You Win! Congratulations\n")
-        print(f"You won in {time_taken:.2f} seconds")
+        print("You Win! Congratulations")
+        print(f"You won in {time_taken:.2f} seconds\n")
     else:
         print("Computer Wins! Better luck next time\n")
     
     
-
     while True:
         print("Would you like to play again?")
         option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
