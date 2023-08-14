@@ -1,4 +1,5 @@
 import random
+import time
 
 
 def battleships():
@@ -54,6 +55,8 @@ def battleships():
     create_ships(player_board)
     create_ships(computer_board)
 
+    time_begin = time.time()
+
     while any(SHIP in row for row in computer_board):
         print("\n Your Board:")
         print_board(player_board)
@@ -105,13 +108,17 @@ def battleships():
             print("Computer MISSED!")
             player_board[computer_guess_row][computer_guess_col] = MISS
 
-   
+    end_time = time.time()
+    time_taken = end_time - time_begin
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):
         print("You Win! Congratulations\n")
+        print(f"You won in {time_taken:.2f} seconds")
     else:
         print("Computer Wins! Better luck next time\n")
+    
+    
 
     while True:
         print("Would you like to play again?")
