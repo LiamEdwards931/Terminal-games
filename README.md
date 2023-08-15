@@ -83,6 +83,10 @@ If the user selects option 1. Battleships they come to this screen:
 
 If the user selections option 2. Battleships Main Game they come to the exact same battleships game as option 1 except the ships are hidden as intented to play
 
+### Option 3
+
+If the user selects Option 3 it opens up the leaderboard for the player to see the Time they have beaten the computer. 
+
 ### Guess input
 
 From here the user can play the battleships game by guessing a grid location this, the computer then takes it's turn:
