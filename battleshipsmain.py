@@ -13,7 +13,8 @@ def battleships():
     BOARD_SIZE = 8
     NUM_SHIPS = 4
     print("Welcome to Battleships\n")
-    print("The aim is to sink your opponent's 4 ships by guessing a grid location\n")
+    print("Guess a grid location to sink your opponents 4 ships\n")
+    input("Press Enter to begin: ")
 
     def initialize_board():
         """
