@@ -23,6 +23,7 @@
         - [Start_Screen](#start-screen)
         - [Option_1](#option-1)
         - [Option_2](#option-2)
+        - [Option_3](#option-3)
         - [Guess](#guess-input)
         - [Guess-Tracking](#guess-tracking)
         - [Winning](#win-screen)
