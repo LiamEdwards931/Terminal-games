@@ -122,7 +122,7 @@ def battleships():
         leaderboard = sorted(leaderboard, key=lambda x: x[1])
     
         # Write leaderboard data to the file
-        with open("leaderboard.txt", "w") as file:
+        with open("leaderboard.txt", "a") as file:
             for player, time_taken in leaderboard:
                 file.write(f"{player}: {time_taken:.2f} seconds\n")
         
