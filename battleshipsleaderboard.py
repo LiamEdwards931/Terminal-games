@@ -2,7 +2,7 @@ def print_leaderboard():
     """
     Prints the data from the battleships leaderboard
     """
-    print("Battleships Main LeaderBoard")
+    print("Battleships Main Leaderboard")
     try:
         with open("leaderboard.txt", "r") as file:
             print("Leaderboard:")
