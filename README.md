@@ -85,7 +85,9 @@ If the user selections option 2. Battleships Main Game they come to the exact sa
 
 ### Option 3
 
-If the user selects Option 3 it opens up the leaderboard for the player to see the Time they have beaten the computer. 
+If the user selects Option 3 it opens up the leaderboard for the player to see the Time they have beaten the computer:
+
+![leaderboard](readmeimg/leaderboard.png)
 
 ### Guess input
 
