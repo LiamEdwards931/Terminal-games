@@ -1,5 +1,6 @@
 import battleships
 import battleshipsmain
+import battleshipsleaderboard
 
 
 def game_select():
@@ -12,6 +13,7 @@ def game_select():
         print("0. Exit Terminal games")
         print("1. Battleships'Test version'")
         print("2. Battleships Main Game")
+        print("3. Battleships Leaderboard")
 
         choice = input("Choose the number of the game you wish to play:")
 
@@ -28,6 +30,8 @@ def game_select():
                 battleships.battleships()
             elif choice == 2:
                 battleshipsmain.battleships()
+            elif choice == 3:
+                battleshipsleaderboard.print_leaderboard()
             else:
                 print("Please enter a valid option\n")
         except ValueError:

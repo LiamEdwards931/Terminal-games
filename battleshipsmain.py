@@ -12,6 +12,7 @@ def battleships():
     MISS = 'O'
     BOARD_SIZE = 8
     NUM_SHIPS = 4
+    leaderboard = []
     print("Welcome to Battleships\n")
     print("Guess a grid location to sink your opponents 4 ships\n")
     input("Press Enter to begin: ")
@@ -116,9 +117,17 @@ def battleships():
     if all(SHIP not in row for row in computer_board):
         print("You Win! Congratulations")
         print(f"You won in {time_taken:.2f} seconds\n")
+        player = input("Enter your name: ")
+        leaderboard.append((player, time_taken))
+        leaderboard = sorted(leaderboard, key=lambda x: x[1])
+    
+        # Write leaderboard data to the file
+        with open("leaderboard.txt", "w") as file:
+            for player, time_taken in leaderboard:
+                file.write(f"{player}: {time_taken:.2f} seconds\n")
+        
     else:
         print("Computer Wins! Better luck next time\n")
-    
     
     while True:
         print("Would you like to play again?")

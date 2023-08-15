@@ -226,6 +226,7 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 
 - The game board code was taken from an idea from: [here](https://copyassignment.com/battleship-game-code-in-python/)
 - Had help with the computer turns and input validation [stack-overflow](https://stackoverflow.com/)
+- [stack-overflow](https://stackoverflow.com/) was also used to help create the leaderboard.
 - Used the love-sandwiches video for a refresher on how to deply the app to Heroku
 
 ## Acknowledgments
