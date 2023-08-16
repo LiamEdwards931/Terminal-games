@@ -147,6 +147,8 @@ Terminal games has input validation - you can only select the options that are a
     - Repeated this by winning and then exiting and then re-entering the game
     - Tested the game by after wins exiting and choosing the other options to check functionality
 
+For more in depth testing go here [Testing](testing.md)
+
 
 [home](#terminal-games)
 
