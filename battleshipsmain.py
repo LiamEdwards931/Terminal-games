@@ -79,7 +79,7 @@ def battleships():
                     continue
 
                 row_guess = int(row_guess_input) - 1
-       
+  
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -126,15 +126,15 @@ def battleships():
         player = input("Enter your name: ")
         leaderboard.append((player, time_taken))
         leaderboard = sorted(leaderboard, key=lambda x: x[1])
-    
+  
         # Write leaderboard data to the file
         with open("leaderboard.txt", "a") as file:
             for player, time_taken in leaderboard:
                 file.write(f"{player}: {time_taken:.2f} seconds\n")
-        
+      
     else:
         print("Computer Wins! Better luck next time\n")
-    
+  
     while True:
         print("Would you like to play again?")
         option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
@@ -148,4 +148,3 @@ def battleships():
             return
         else:
             print("Please choose a valid option.")
-
