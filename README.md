@@ -63,6 +63,8 @@ and it will be interesting to develop some more ideas in the future.
 
 ## Flow Chart
 
+Here is a flowchart mapping the programs within Terminal-Games
+
 ![flow-chart](readmeimg/flowchart.png)
 
 ## Features
