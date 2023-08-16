@@ -6,4 +6,3 @@ def print_leaderboard():
                 print(line.strip())
     except FileNotFoundError:
         print("Leaderboard is empty.")
-
