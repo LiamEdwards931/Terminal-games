@@ -90,6 +90,7 @@ def battleships():
                     continue
 
                 if computer_board[row_guess][col_dict[column_guess]] == SHIP:
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     print("HIT! You successfully hit a ship\n")
                     computer_board[row_guess][col_dict[column_guess]] = HIT
                 elif computer_board[row_guess][col_dict[column_guess]] == HIT or computer_board[row_guess][col_dict[column_guess]] == MISS:
@@ -106,10 +107,10 @@ def battleships():
 
         print("\nComputer's Turn:")
         if player_board[computer_guess_row][computer_guess_col] == SHIP:
-            print("Computer HIT your ship!")
+            print("Computer HIT your ship!\n")
             player_board[computer_guess_row][computer_guess_col] = HIT
         else:
-            print("Computer MISSED!")
+            print("Computer MISSED!\n")
             player_board[computer_guess_row][computer_guess_col] = MISS
             print("Updating Board...")
             time.sleep(1.5)
