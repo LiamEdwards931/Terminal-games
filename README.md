@@ -19,6 +19,7 @@
 - [Live-Deployment](#live-deployment)
 - [Inspiration](#inspiration)
 - [User-Experience](#user-experience)
+    - [Flow_Chart](#flow-chart)
     - [Features](#features)
         - [Start_Screen](#start-screen)
         - [Option_1](#option-1)
@@ -59,6 +60,10 @@ and it will be interesting to develop some more ideas in the future.
     - As a user I would expect to be able to play the game again if I wanted
     - As a user I would expect to be able to return to the main landing page
     - As a user I would expect to see the game board in a clear way.
+
+## Flow Chart
+
+![flow-chart](readmeimg/flowchart.png)
 
 ## Features
 
