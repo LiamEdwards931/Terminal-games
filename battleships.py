@@ -2,7 +2,7 @@ import random
 import os
 import time
 
-""" 
+"""
 For testing, the ships are marked
 This is intentional
 """
@@ -113,7 +113,7 @@ def battleships():
             print("Updating Board...")
             time.sleep(1.5)
 
-    
+ 
     print("\nYour Final Board:")
     print_board(player_board)
     if all(SHIP not in row for row in computer_board):

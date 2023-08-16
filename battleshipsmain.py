@@ -39,7 +39,7 @@ def battleships():
     def print_board(board, show_ships=True):
         """
         prints the game board 
-        this code has a new argument so you can see the ships on your own board 
+        this code has a new argument so you can see the ships on your own board
         but not on computer board
         """
         print('   A B C D E F G H')
@@ -79,7 +79,7 @@ def battleships():
                     continue
 
                 row_guess = int(row_guess_input) - 1
-  
+
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -98,7 +98,7 @@ def battleships():
                 else:
                     print("MISS! You missed a ship\n")
                     computer_board[row_guess][col_dict[column_guess]] = MISS
-                break  
+                break 
             except ValueError:
                 print("Invalid input. Please enter valid inputs.\n")
 
@@ -131,7 +131,7 @@ def battleships():
         with open("leaderboard.txt", "a") as file:
             for player, time_taken in leaderboard:
                 file.write(f"{player}: {time_taken:.2f} seconds\n")
-    
+
     else:
         print("Computer Wins! Better luck next time\n")
 
