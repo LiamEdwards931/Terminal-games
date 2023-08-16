@@ -63,6 +63,7 @@ def battleships():
     while any(SHIP in row for row in computer_board):
         print("\n Your Board:")
         print_board(player_board)
+        time.sleep(1)
 
         print("\n Computer's Board:")
         print_board(computer_board, show_ships=False)
@@ -110,6 +111,8 @@ def battleships():
         else:
             print("Computer MISSED!")
             player_board[computer_guess_row][computer_guess_col] = MISS
+            print("Updating Board...")
+            time.sleep(1.5)
 
     end_time = time.time()
     time_taken = end_time - time_begin
@@ -140,6 +143,7 @@ def battleships():
             break
         elif option == "no":
             print("Thank you for playing Battleships!")
+            os.system('cls' if os.name == 'nt' else 'clear')
             return
         else:
             print("Please choose a valid option.")

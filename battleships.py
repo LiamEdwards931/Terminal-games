@@ -1,5 +1,6 @@
 import random
 import os
+import time
 
 """ 
 For testing, the ships are marked
@@ -59,6 +60,7 @@ def battleships():
     while any(SHIP in row for row in computer_board):
         print("\n Your Board:")
         print_board(player_board)
+        time.sleep(1)
 
         print("\n Computer's Board:")
         print_board(computer_board)
@@ -74,7 +76,7 @@ def battleships():
                     continue
 
                 row_guess = int(row_guess_input) - 1
-     
+    
                 col_dict = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
                 if column_guess not in col_dict:
                     print("That is not a valid column. Try again\n")
@@ -106,6 +108,8 @@ def battleships():
         else:
             print("Computer MISSED!")
             player_board[computer_guess_row][computer_guess_col] = MISS
+            print("Updating Board...")
+            time.sleep(1.5)
 
     
     print("\nYour Final Board:")
@@ -124,6 +128,7 @@ def battleships():
             break
         elif option == "no":
             print("Thank you for playing Battleships!")
+            os.system('cls' if os.name == 'nt' else 'clear')
             return
         else:
             print("Please choose a valid option.")
