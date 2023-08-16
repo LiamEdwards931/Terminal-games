@@ -63,7 +63,7 @@ def battleships():
     while any(SHIP in row for row in computer_board):
         print("\n Your Board:")
         print_board(player_board)
-        time.sleep(1)
+        time.sleep(0.5)
 
         print("\n Computer's Board:")
         print_board(computer_board, show_ships=False)

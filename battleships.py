@@ -60,7 +60,7 @@ def battleships():
     while any(SHIP in row for row in computer_board):
         print("\n Your Board:")
         print_board(player_board)
-        time.sleep(1)
+        time.sleep(0.5)
 
         print("\n Computer's Board:")
         print_board(computer_board)
@@ -87,11 +87,13 @@ def battleships():
                     continue
 
                 if computer_board[row_guess][col_dict[column_guess]] == SHIP:
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     print("HIT! You successfully hit a ship\n")
                     computer_board[row_guess][col_dict[column_guess]] = HIT
                 elif computer_board[row_guess][col_dict[column_guess]] == HIT or computer_board[row_guess][col_dict[column_guess]] == MISS:
                     print("This position has already been fired at! Try again\n")
                 else:
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     print("MISS! You missed a ship\n")
                     computer_board[row_guess][col_dict[column_guess]] = MISS
                 break  # Exit the loop if all checks pass
