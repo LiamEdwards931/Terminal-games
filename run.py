@@ -1,6 +1,7 @@
 import battleships
 import battleshipsmain
 import battleshipsleaderboard
+import os
 
 
 def game_select():
@@ -27,10 +28,13 @@ def game_select():
                 print("Thank you for using Terminal Games\n")
                 break
             elif choice == 1:
+                os.system('cls' if os.name == 'nt' else 'clear')
                 battleships.battleships()
             elif choice == 2:
+                os.system('cls' if os.name == 'nt' else 'clear')
                 battleshipsmain.battleships()
             elif choice == 3:
+                os.system('cls' if os.name == 'nt' else 'clear')
                 battleshipsleaderboard.print_leaderboard()
             else:
                 print("Please enter a valid option\n")

@@ -1,4 +1,5 @@
 import random
+import os
 
 """ 
 For testing, the ships are marked
@@ -118,6 +119,7 @@ def battleships():
         print("Would you like to play again?")
         option = input("Type in 'yes' to play again or 'no' to go back to the home screen: ").lower()
         if option == "yes":
+            os.system('cls' if os.name == 'nt' else 'clear')
             battleships()
             break
         elif option == "no":
