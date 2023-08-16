@@ -117,6 +117,7 @@ def battleships():
     if all(SHIP not in row for row in computer_board):
         print("You Win! Congratulations")
         print(f"You won in {time_taken:.2f} seconds\n")
+        print("Your score has been added to the leaderbaord in option 3.\n")
         player = input("Enter your name: ")
         leaderboard.append((player, time_taken))
         leaderboard = sorted(leaderboard, key=lambda x: x[1])

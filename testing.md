@@ -43,5 +43,25 @@
 
 ## Battleships main game
 
-- All of the testing was performed on the main game aswell as the test version as the code was copied over with a few changes 
+Any and all tests in the previous section were also performed in this code aswell, to re-read go [back](#battleships-test-option-1)
+
+- Expected: Once the game has ended an input will display asking for your name to display your time it took you to win.
+    - Testing - Tested input validation and if the input was correctly working for the player update and first run, restart run and exit and enter run.
+    - Result - Blank inputs are not allowed, player name correctly updates on the win screen.
+
+- Expected: Once the game has ended and a name has been input you will get a message saying how long it took you to win e.g "You won in 48 seconds"
+    - Testing - Tested the game on first run, restart run and exit and enter run to ensure time was always being displayed on a playthrough.
+    - Result - Time on a game win is correctly updating
+
+- Expected: Once the game has ended and the user has entered a name the score will append to a file called leaderboard.txt that is viewable from the main menu
+    - Testing - Went through the game twice to check appended entries, then exited played again and then restart the game and then checked the appended entries again.
+    - Result - all entries that I had made were successfully pushed into the txt file and available to view in option 3. Battleship Leaderboard.
+
+
+I have tested all of these entries as thoroughly as I could and believe I have not missed any of the features.
+
+[Back_to_main_README](README.md)
+
+
+
 
